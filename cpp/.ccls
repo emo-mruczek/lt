@@ -1,0 +1,7 @@
+g++
+%cpp -std=c++20
+%hpp
+-Iinclude
+-Wall
+-Wextra
+-Wpedantic
