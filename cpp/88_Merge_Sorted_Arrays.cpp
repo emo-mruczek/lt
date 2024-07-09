@@ -17,7 +17,7 @@ public:
     }
 };*/
 
-//rozwiazanie "od tylu", aby nie musiec jakos przepychac rzeczy czy cos
+// solution "from end" its better, cuz we need to do it in-place
 class Solution {
 public:
     void merge(std::vector<int>& nums1, int m, std::vector<int>& nums2, int n) {
