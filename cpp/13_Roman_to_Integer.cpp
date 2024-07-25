@@ -21,12 +21,12 @@ public:
         for (char c: s) {
             switch (c) {
                 case 'I': current = { 1 }; break;
-                case 'V': current = { 5 };
-                case 'X': current = { 10 };
-                case 'L': current = { 50 };
-                case 'C': current = { 100 };
-                case 'D': current = { 500 };
-                case 'M': current = { 1000 };
+                case 'V': current = { 5 }; break;
+                case 'X': current = { 10 };break;
+                case 'L': current = { 50 }; break;
+                case 'C': current = { 100 }; break;
+                case 'D': current = { 500 }; break;
+                case 'M': current = { 1000 };break;
                 default: break;
             }
 
@@ -46,7 +46,7 @@ public:
 };
 
 int main() {
-    int dupa = Solution::romanToInt("III");
-    std::cout << dupa << "\n";
+    int res = Solution::romanToInt("III");
+    std::cout << res << "\n";
     return 0;
 }
