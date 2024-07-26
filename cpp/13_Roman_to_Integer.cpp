@@ -30,23 +30,21 @@ public:
                 default: break;
             }
 
-            if (!previous || previous == current) {
-                result += current;
-                previous = { current };
+            if (current > previous) {
+                result += current - 2 * previous; // to "undone" unnecesary addition
             } else {
-                if (previous < current) {
-                    result += current - previous;
-                    previous = { 0 };
-                }
+                result += current;
             }
-        }
+    previous = {current};
+          
+                   }
 
         return result;
     }
 };
 
 int main() {
-    int res = Solution::romanToInt("III");
+    int res = Solution::romanToInt("MCMXCIV");
     std::cout << res << "\n";
     return 0;
 }
